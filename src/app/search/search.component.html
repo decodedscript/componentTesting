@@ -1,0 +1,8 @@
+<form>
+    <label>Name</label>
+    <input type="text" #name id="name">
+    <label>Email</label>
+    <input type="text" #email id="email">
+    <button type="button" id="searchbtn"  (click)="search(name.value, email.value)" [disabled]="!hasEnabled">Search
+    </button>
+</form>
